@@ -1,62 +1,96 @@
-
-.icon{
-    padding: 2px 3px;  
-    border: 1px solid;
-    border-radius: 50%;
-    cursor: pointer;
-
+.icon {
+  padding: 2px 3px;
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .btn {
-    width: 100%;
-    display: inline-block;
-    padding: 0.75rem 1.2rem;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    border: 2px solid gray;
-    transition: var(--transition);
-   
-} 
-
-.btn-primary{
-    width: 10rem;
-    display: inline-block;
-    padding: 0.75rem 3rem;
-    border-radius: 0.6rem;
-    color: #000;
-    background-color: #f7ad3e;
-    cursor: pointer;
-    border: none;
-}
-.btn-primary:hover{
-    background-color: #f7ad3e;
-    transition: var(--transition);
-
+  width: 100%;
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  border: 2px solid gray;
+  transition: var(--transition);
 }
 
-.btn__link{
-    align-items: center;
-    display: flex;
+.btn-primary {
+  width: 10rem;
+  display: inline-block;
+  padding: 0.75rem 3rem;
+  border-radius: 0.6rem;
+  color: #000;
+  background-color: #f7ad3e;
+  cursor: pointer;
+  border: none;
 }
-.btn__link span{
-    font-size: .9rem;
-    color: #161515;
-    padding-left: .9rem;
+.btn-primary:hover {
+  background-color: #f7ad3e;
+  transition: var(--transition);
 }
 
-.form-check{
-    border-radius: 8px;
-    background-color: #f7f5f5;
-    padding: 0.7rem 2rem;
+.btn__link {
+  align-items: center;
+  display: flex;
+}
+.btn__link span {
+  font-size: 0.9rem;
+  color: #161515;
+  padding-left: 0.9rem;
+}
+
+.form-check {
+  border-radius: 8px;
+  background-color: #f7f5f5;
+  padding: 0.7rem 2rem;
 }
 
 hr:not([size]) {
-    height: 2px;
+  height: 2px;
 }
 hr {
-    margin: 2rem 0;
-    color: inherit;
-    background-color: currentColor;
-    border: 0;
-    opacity: .25;
+  margin: 2rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  padding: 10px;
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media screen and (max-width: 576px) {
+  .grid {
+    display: flex !important;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    flex-wrap: wrap;
+
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+ @media screen and (max-width: 992px) {
+    .grid {
+        display:grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+  }
+
+
+
+   
+
+
+

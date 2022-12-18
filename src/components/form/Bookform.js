@@ -21,11 +21,11 @@ const Bookform = () => {
   };
 
   return (
-    <div className="px-3 flex-1" >
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+    <div className="px-3 row" >
+      <div  className="grid">
         {data.map((user, index) => {
           return (
-            <div key={index}>
+            <div key={index} className='text-center '>
               <div
                 onClick={() => HandlerChange(user)}
                 style={{
